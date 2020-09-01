@@ -9,12 +9,156 @@ The fourth task that includes javascript is executed
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link rel="stylesheet" href="task4.css">
-<script src='ftt.js'></script>
+  <!--    <link rel="stylesheet" href="task4.css"> -->
+
     <title>Hello, world!</title>
   </head>
   <body>
+      
+      <style>
+      
+      .kj{
+    background-size: 800px;
+    background-image:url('D:/fq2.jpg' );
+    background-size: contain;
+     
+    width: 30px;
+    height: 30px;
     
+}
+.kt{
+    background-size: 800px;
+    background-image:url('D:/fq1.jpg' );
+    background-size: contain;
+     
+    width: 30px;
+    height: 30px;
+    
+}
+.kv{
+    background-size: 800px;
+     
+    width: 30px;
+    height: 30px;
+    
+}
+      
+      
+      </style>
+    <script type="text/javascript">
+        
+        var m1=2*80;
+var m2=3*100;
+var m3=1*50;
+var m4=m1+m2+m3;
+var m5=m4-20;
+
+
+function sum(){
+  
+ 
+    if(document.getElementById('n1')!=null)
+        {
+          
+             y1=parseInt(document.getElementById('n1').value);
+                m1=y1*80;
+            document.getElementById('n3').innerHTML="$"+m1+".00";
+             
+        }
+    
+    
+    else
+        {
+             
+            
+            m1=0;
+             
+            
+        }
+     if(document.getElementById('h1')!=null)
+        {
+          
+             y2=parseInt(document.getElementById('h1').value);
+                m2=y2*100;
+            document.getElementById('h2').innerHTML="$"+m2+".00";
+             
+        }
+    
+    
+    else
+        {
+             
+            
+            m2=0;
+             
+            
+        }
+    if(document.getElementById('p1')!=null)
+        {
+          
+             y3=parseInt(document.getElementById('p1').value);
+                m3=y3*50;
+            document.getElementById('p2').innerHTML="$"+m3+".00";
+             
+        }
+    
+    
+    else
+        {
+             
+            
+            m3=0;
+             
+            
+        }
+     
+     m4=m1+m2+m3;
+    document.getElementById('p4').innerHTML="$"+m4+".00";
+ m5=m4-20;
+     document.getElementById('p5').innerHTML="$"+m5+".00";
+    
+    
+    
+}
+
+
+function dele()
+{
+    m4=m1+m2;
+     document.getElementById('p4').innerHTML="$"+m4+".00";
+    m5=m4-20;
+    document.getElementById('p5').innerHTML="$"+m5+".00";
+        var elem= document.getElementById('o1');
+  
+    elem.remove();
+    
+
+}
+function dele1()
+{
+    m4=m3+m2;
+     document.getElementById('p4').innerHTML="$"+m4+".00";
+    m5=m4-20;
+    document.getElementById('p5').innerHTML="$"+m5+".00";
+        var elem= document.getElementById('kk1');
+  
+    elem.remove();
+    
+
+}
+function dele2()
+{
+    m4=m1+m3;
+     document.getElementById('p4').innerHTML="$"+m4+".00";
+    m5=m4-20;
+    document.getElementById('p5').innerHTML="$"+m5+".00";
+        var elem= document.getElementById('kk2');
+  
+    elem.remove();
+    
+
+}
+      </script>
       
       
       
@@ -268,3 +412,4 @@ The fourth task that includes javascript is executed
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
+
